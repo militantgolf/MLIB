@@ -33,6 +33,8 @@ Command Parameters:
 -d Data Dump, Same as the program argument
 
 -r Range Parameter, -r <HEXVALUE>-<HEXVALUE> parameter are two hex values separated by a dash '-'. Hex values are not to have the '0x' suffix or 'h' postfix, as of this moment they are not supported. if -r is not given command will effect whole file.
+  
+-h Hide Parameter, When given command hides unnessisary junk
 
 When in edit mode you will see the cursor "SimpleHex>". The program accepts the following commands:
 
@@ -46,7 +48,7 @@ and:   Applies the AND operation on a given byte and the file or a section of th
 
 save:  Saves the file
 
-find:  Searches the file for the given hex string, and outputs the amount of occurences as well as their positions in the file
+find:  Searches the file for the given hex string, and outputs the amount of occurences as well as their positions in the file. Parameters: -h
 
 quit:  Quits the program, may also use "exit"
   
